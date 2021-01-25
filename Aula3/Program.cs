@@ -1,16 +1,18 @@
 ﻿using System;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 
-namespace Aula2
+namespace Aula3
 {
     class Program
     {
         static void Main(string[] args)
         {
-           var host = new WebHostBuilder()
-           .UseKestrel()
+           var host = WebHost
+           .CreateDefaultBuilder(args)
            .UseStartup<Startup>()
            .Build();
 
@@ -20,11 +22,17 @@ namespace Aula2
 
     internal class Startup
     {
+        private readonly IConfiguration _configuration;
+
+        public Startup(IConfiguration configuration)
+        {
+          _configuration = configuration;   
+        }
         public void Configure(IApplicationBuilder app)
         {
             app.Use(async (context, next) => {
 
-                await context.Response.WriteAsync("Trabalhando com classe Startup");
+                await context.Response.WriteAsync(_configuration["Application"]);
             });
         }
     }
