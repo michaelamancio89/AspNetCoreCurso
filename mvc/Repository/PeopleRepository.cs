@@ -12,7 +12,7 @@ namespace mvc.Repository
         }
         public string GetNameById(int id)
         {
-            return "Michael Amâncio";
+            return "Rede Gazeta";
         }
     }
 }
