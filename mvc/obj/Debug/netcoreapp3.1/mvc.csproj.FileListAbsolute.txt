@@ -35,3 +35,4 @@ C:\Users\Michael\Documents\MeusRepositorios\AspNetCoreCurso\mvc\obj\Debug\netcor
 C:\Users\Michael\Documents\MeusRepositorios\AspNetCoreCurso\mvc\obj\Debug\netcoreapp3.1\mvc.pdb
 C:\Users\Michael\Documents\MeusRepositorios\AspNetCoreCurso\mvc\obj\Debug\netcoreapp3.1\mvc.genruntimeconfig.cache
 C:\Users\Michael\Documents\MeusRepositorios\AspNetCoreCurso\mvc\obj\Debug\netcoreapp3.1\mvc.csproj.CopyComplete
+C:\Users\Michael\Documents\MeusRepositorios\AspNetCoreCurso\mvc\bin\Debug\netcoreapp3.1\appsettings.Staging.json
